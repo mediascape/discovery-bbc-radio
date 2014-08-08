@@ -1,0 +1,21 @@
+{
+  "name": "Discovery BBC Radio",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches" : ["http://www.bbc.co.uk/*", "http://www.bbc.com/*"],
+      "css"     : ["css/styles.css"],
+      "js"      : [
+        "js/lib/lodash.min.js", 
+        "js/lib/xhr.js", 
+        "js/utils.js",
+        "js/dom-utils.js",
+        "js/bbc-radio.js",
+        "js/streams.js",
+        "js/ui.js",
+        "js/content.js"
+      ]
+    }
+  ]
+}
