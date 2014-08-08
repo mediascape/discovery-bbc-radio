@@ -12,7 +12,6 @@
         "js/utils.js",
         "js/dom-utils.js",
         "js/bbc-radio.js",
-        "js/streams.js",
         "js/ui.js",
         "js/content.js"
       ]
