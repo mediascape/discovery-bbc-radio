@@ -28,6 +28,6 @@
     }
   }
 
-  exports.bbcRadio = obj;
+  exports.radio = obj;
 
-})(window.mediascape = window.mediascape || {})
+})(window.bbc = window.bbc || {})

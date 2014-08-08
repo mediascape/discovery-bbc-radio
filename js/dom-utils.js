@@ -8,4 +8,4 @@
     }    
   };
 
-})(window.mediascape = window.mediascape || {})
+})(window.bbc = window.bbc || {})

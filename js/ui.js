@@ -12,10 +12,11 @@
         el.addEventListener('click', handlerFactory(el));
       };
     },
-    // On click
-    //   - prevent default
-    //   - grab stream url
-    //   - fetch list of radiodans
+    createHandlerToPreventDefaultAction: function (el) {
+      return function eventHandler(evt) {
+        domUtils.preventFiring(evt);
+      };
+    },
     createHandlerForEl: function (el) {
       return function eventHandler(evt) {
         var target = traverseParentsToFindNode(evt.target, el);
@@ -38,4 +39,4 @@
     }
   }
 
-})(window.mediascape = window.mediascape || {})
+})(window.bbc = window.bbc || {})
