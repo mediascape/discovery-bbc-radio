@@ -5,6 +5,9 @@
   "icons": {
     "128": "img/icon.png"
   },
+  "permissions": [
+    "http://*/"
+  ],
   "content_scripts": [
     {
       "matches" : ["http://www.bbc.co.uk/*", "http://www.bbc.com/*"],
