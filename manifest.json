@@ -13,8 +13,8 @@
       "matches" : ["http://www.bbc.co.uk/*", "http://www.bbc.com/*"],
       "css"     : ["css/styles.css"],
       "js"      : [
-        "js/lib/lodash.min.js", 
-        "js/lib/xhr.js", 
+        "js/lib/lodash.min.js",
+        "js/lib/xhr.js",
         "js/utils.js",
         "js/dom-utils.js",
         "js/bbc-radio.js",

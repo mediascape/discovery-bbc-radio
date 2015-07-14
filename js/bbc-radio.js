@@ -1,6 +1,6 @@
-(function (exports) {  
+(function (exports) {
   'use strict';
-  
+
   var obj = {
     playableLinks: function (container) {
       return container.querySelectorAll('a[data-player-html5-stream]');

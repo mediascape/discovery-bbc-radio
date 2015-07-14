@@ -7,9 +7,9 @@
 
   // Resolve the links to playable streams
   var playableStreams = _.map(
-    playableLinks, 
+    playableLinks,
     resolvePlayableStreamFromEl
-  ); 
+  );
 
   // When all streams have been found, add mediascape attribute
   // to DOM
@@ -20,7 +20,7 @@
 
   // Prevent default action when button is clicked
   _.forEach(
-    playableLinks, 
+    playableLinks,
     bbc.ui.createEventInterceptor(bbc.ui.createHandlerToPreventDefaultAction)
   );
 
@@ -39,7 +39,7 @@
   }
 
   /*
-    Adds a mediascape attribute to the element which 
+    Adds a mediascape attribute to the element which
     tells the mediascape discovery extension to provide
     a UI allowing selection of the stream
   */

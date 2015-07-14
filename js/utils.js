@@ -1,6 +1,6 @@
-(function (exports) {  
+(function (exports) {
   'use strict';
-  
+
   exports.utils = {
     log: function () {
       console.log(arguments);
