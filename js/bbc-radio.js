@@ -2,14 +2,23 @@
   'use strict';
 
   var obj = {
+    playlistFormat: 'http://open.live.bbc.co.uk/mediaselector/5/select/mediaset/http-icy-mp3-a/vpid/$station/format/pls.pls',
     playableLinks: function (container) {
       return container.querySelectorAll('a[data-player-html5-stream]');
     },
     playlistUrl: function playlistUrl(el) {
       console.log('playlistUrl( %o )', el);
       return new Promise(function (resolve, reject) {
-        var url = el.getAttribute('data-player-html5-stream');
-        url ? resolve(url) : reject(url);
+        var station = el.getAttribute('href').split('/').pop(),
+            playlistUrl;
+
+        if(station == '') {
+          reject(playlistUrl);
+        } else {
+          console.log('o', obj);
+          playlistUrl = obj.playlistFormat.replace('$station', station);
+          resolve(playlistUrl);
+        }
       });
     },
     extractStreamForUrl: function (url) {
