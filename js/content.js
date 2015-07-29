@@ -45,7 +45,7 @@
   */
   function addMediaScapeDataAttributeForStream(data) {
     if (data.el && data.url) {
-      data.el.setAttribute('data-mediscape-playable-stream', data.url);
+      data.el.setAttribute('data-mediascape-playable-stream', data.url);
     }
   }
 
