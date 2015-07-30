@@ -15,7 +15,6 @@
         if(station == '') {
           reject(playlistUrl);
         } else {
-          console.log('o', obj);
           playlistUrl = obj.playlistFormat.replace('$station', station);
           resolve(playlistUrl);
         }
